@@ -3,7 +3,7 @@ Twitch streaming website
 
 Create a website for your twitch stream with ease.
 
-Change `twitchusername` in `index.html` and `js/main.js` and it will automaticall include your twitch feed.
+Change `twitchusername` in `index.html` and `js/main.js` and it will automatically include your twitch feed.
 
 Demo: http://friss.github.io/TwitchStream/
 
