@@ -1,4 +1,4 @@
-$.getJSON( "https://api.twitch.tv/kraken/streams/twitchusername?callback=?", function(response) {
+$.getJSON( "https://api.twitch.tv/kraken/streams/seriousgaming?callback=?", function(response) {
   if (response.stream){
     $('.viewers span').text(response.stream.viewers);
     $('.followers span').text(response.stream.channel.followers);
