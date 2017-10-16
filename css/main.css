@@ -61,7 +61,7 @@
   border-color: #7B848F;
 }
 
-.intro{
+.intro {
   border-radius: 6px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -74,10 +74,16 @@
   position: relative;
 }
 
+.intro #video-player {
+  height: 100%;
+}
+
 .intro iframe {
   border-radius: 6px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .intro img {
