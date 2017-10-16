@@ -58,15 +58,7 @@
             </div>
           </div>
         <div class="intro">
-            <iframe 
-                class="hidden"
-                src="https://player.twitch.tv/?channel={TWITCH_USER_NAME}" 
-                height="100%" 
-                width="100%" 
-                frameborder="0" 
-                scrolling="no"
-                allowfullscreen="true"
-            ></iframe>
+          <div id="video-player" class="hidden"></div>
           <div class="intro-text">
             <h1>Twitch Stream offline.</h1>
             <p>Stream offline. Come back later and watch me play.</p>
@@ -156,6 +148,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src= "//player.twitch.tv/js/embed/v1.js"></script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
 
