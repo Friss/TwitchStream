@@ -6,15 +6,15 @@ var twitchUsername = "{TWITCH_USER_NAME}";
 
 $.getJSON( "https://api.twitch.tv/kraken/streams/twitchusername?client_id="+ clientId + "&callback=?", function(response) {
   if (response.stream){
-    $('.viewers span').text(response.stream.viewers);
-    $('.intro-text').addClass('hidden');
+    $(".viewers span").text(response.stream.viewers);
+    $(".intro-text").addClass("hidden");
   }else{
-    $('.viewers span').text("0");
+    $(".viewers span").text("0");
   }
 });
 
 $.getJSON( "https://api.twitch.tv/kraken/channels/twitchusername/follows?client_id="+ clientId + "&callback=?", function(response) {
-  $('.followers span').text(response["_total"]);
+  $(".followers span").text(response["_total"]);
 });
 
 var options = {
@@ -23,11 +23,11 @@ var options = {
 var player = new Twitch.Player("video-player", options);
 
 player.addEventListener(Twitch.Player.ONLINE, function() {
-  $('#video-player').removeClass('hidden');
-  $('.intro-text').addClass('hidden');
+  $("#video-player").removeClass("hidden");
+  $(".intro-text").addClass("hidden");
 });
 
 player.addEventListener(Twitch.Player.OFFLINE, function() {
-  $('#video-player').addClass('hidden');
-  $('.intro-text').removeClass('hidden');
+  $("#video-player").addClass("hidden");
+  $(".intro-text").removeClass("hidden");
 });
